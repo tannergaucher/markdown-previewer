@@ -1,11 +1,9 @@
-###my-react-app
-
-skeleton create-react-app
-
-###Added
+create-react-app skeleton
+Added:
 styled components && global ThemeProvider
 react-router-dom
-google fonts: inconsolata
+
+
 
 
 
