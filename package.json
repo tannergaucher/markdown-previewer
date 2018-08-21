@@ -1,5 +1,6 @@
 {
-  "name": "my-create-react-app",
+  "name": "markdown-previewer",
+  "author": "Tanner Gaucher",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
