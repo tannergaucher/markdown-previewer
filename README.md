@@ -1,9 +1,5 @@
-create-react-app skeleton
-Added:
-styled components && global ThemeProvider
-react-router-dom
+Freecodecamp front-end frameworks project. 
 
-
-
+React, styled components
 
 
