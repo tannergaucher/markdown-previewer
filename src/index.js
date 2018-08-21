@@ -7,34 +7,26 @@ import { ThemeProvider, injectGlobal } from 'styled-components'
 import App from './components/App'
 
 injectGlobal`
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html {
+  margin: 0;
+  padding: 0;
+}
   body {
     margin: 0;
     padding: 0;
-    font-family: inconsolata;
+    font-family: Roboto mono;
   }
 `
 
-const theme = {
-  primary: 'palevioletred',
-  secondary: 'papayawhip',
-  margin: '1em',
-  typography: {
-    primaryFont: 'inconsolata',
-    secondaryFont: 'helvetica',
-    mainTextSize: '20px',
-    secondaryTextSize: '16px',
-    anchorTextColor: 'black'
-  }
-}
-
 ReactDOM.render(
-  <ThemeProvider theme={theme}>
-    <BrowserRouter>
-      <Switch>
-        <Route path="/" component={App} />
-      </Switch>
-    </BrowserRouter>
-  </ThemeProvider>,
+  <BrowserRouter>
+    <Switch>
+      <Route path="/" component={App} />
+    </Switch>
+  </BrowserRouter>,
   document.getElementById('root')
 )
 registerServiceWorker()
